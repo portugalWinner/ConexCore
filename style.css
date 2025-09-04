@@ -50,42 +50,30 @@ body {
 
 /* Hero */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://images.unsplash.com/photo-1506765515384-028b60a970df') center/cover no-repeat;
+  background: #ffffff; /* fundo branco */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: #333; /* cor do texto escuro para contraste */
   padding: 20px;
 }
 
 .hero-text h1 {
   font-size: 2.8em;
   animation: fadeInDown 2s;
+  color: #111; /* título bem visível */
 }
 
 .hero-text span {
-  color: #00a8ff;
+  color: #00a8ff; /* mantém destaque azul */
 }
 
 .hero-text p {
   margin: 15px 0;
   animation: fadeIn 3s;
-}
-
-.btn {
-  background: #00a8ff;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #00a8ff;
+  color: #444; /* texto levemente mais suave */
 }
 
 /* Animações */
@@ -185,4 +173,33 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px;
+}
+
+/* Ajuste da logo */
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 45px;   /* tamanho da logo */
+  width: auto;
+  margin-right: 20px;
+}
+
+/* Botão Cursos */
+.btn-cursos {
+  display: inline-block;
+  margin-top: 15px;
+  background: #00a8ff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-cursos:hover {
+  background: #0077cc;
 }
