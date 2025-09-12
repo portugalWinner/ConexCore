@@ -1,89 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ConexCore</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Biblioteca de ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-  <!-- Logo que volta pra Home -->
-  <a href="index.html" class="logo-link">
-    <img src="file_000000003bb861f68943da2145dd005e.png" alt="Conexcore Logo" class="logo-img">
-  </a>
-
-<!---- MENU HAMBURGUER ---->
+  <!-- ===== Header com menu hamburguer ===== -->
   <header>
-  <div class="logo">
-    <img src="img/conexcore.png" alt="Conexcore" />
-  </div>
-  <div class="menu-toggle" id="menu-toggle">☰</div>
-  <nav class="menu" id="menu">
-    <ul>
-      <li><a href="#">Criar Conta</a></li>
-      <li><a href="#">Dúvidas</a></li>
-      <li><a href="#">Feedbacks</a></li>
-      <li><a href="#">Equipe</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <!-- Seção Hero -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>ConexCore <span>Fazendo suas ideias tornar realidade! </span></h1>
-      <p>Soluções digitais modernas para o seu negócio crescer.</p>
-      <a href="#contato" class="btn">Fale Conosco</a>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/conexcore.png" alt="Conexcore" />
+      </a>
     </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">Criar Conta</a></li>
+        <li><a href="#">Dúvidas</a></li>
+        <li><a href="#">Feedbacks</a></li>
+        <li><a href="#">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero (o que você já tinha) ===== -->
+  <section class="hero">
+    <h1>ConexCore</h1>
+    <h2>Fazendo suas ideias tornar realidade!</h2>
+    <p>Soluções digitais modernas para o seu negócio crescer.</p>
+    <a href="cursos.html">Fale Conosco</a>
   </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="sobre">
+  <!-- ===== Seção Sobre (mantida) ===== -->
+  <section id="sobre">
     <h2>Sobre</h2>
-    <p>Te fazendo aprender do jeito certo certo e com o melhor material possível que a ConexCore proporciona.</p>
+    <p>
+      Te fazendo aprender do jeito certo e com o melhor material possível
+      que a ConexCore proporciona.
+    </p>
   </section>
 
-  <!-- Serviços -->
-  <section id="servicos" class="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="cards">
-      <div class="card">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Desenvolvimento Web</h3>
-        <p>Sites modernos, rápidos e responsivos para sua empresa.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-mobile-alt"></i>
-        <h3>Apps Mobile</h3>
-        <p>Aplicativos inovadores para Android e iOS.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-chart-line"></i>
-        <h3>Marketing Digital</h3>
-        <p>Estrategias digitais que aumentam seus resultados.</p>
-      </div>
-      <a href="cursos.html" class="btn-cursos">Cursos</a>
+  <!-- ===== Seção Serviços (mantida) ===== -->
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="servicos-container">
+      <img src="img/servico1.png" alt="Serviço 1">
+      <img src="img/servico2.png" alt="Serviço 2">
+      <img src="img/servico3.png" alt="Serviço 3">
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="contato">
-    <h2>Entre em Contato</h2>
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu email" required>
-      <textarea placeholder="Sua mensagem"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <!-- ===== Seção Contato (mantida) ===== -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato com nossa equipe:</p>
+    <a href="mailto:conexcore@gmail.com">conexcore@gmail.com</a>
   </section>
 
-  <!-- Rodapé -->
+  <!-- ===== Footer ===== -->
   <footer>
-    <p>© 2025 - ConexCore | Todos os direitos reservados</p>
+    <p>© 2025 ConexCore - Todos os direitos reservados</p>
   </footer>
 
   <script src="script.js"></script>
