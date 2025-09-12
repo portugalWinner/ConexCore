@@ -21,12 +21,25 @@ cards.forEach(card => {
   card.style.transition = "all 0.6s ease";
 })
 
-// Menu hamburguer toggle
+// Espera a página carregar
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("menu");
 
+  // Abre/fecha o menu quando clicar no ícone ☰
   menuToggle.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  });
+
+  // Fecha o menu se clicar em algum link
+  const links = menu.querySelectorAll("a");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.style.display = "none";
+    });
   });
 });
