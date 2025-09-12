@@ -21,10 +21,12 @@ cards.forEach(card => {
   card.style.transition = "all 0.6s ease";
 })
 
-// Menu hamburguer
-const menuToggle = document.getElementById("menu-toggle");
-const menu = document.getElementById("menu");
+// Menu hamburguer toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
 
-menuToggle.addEventListener("click", () => {
-  menu.style.display = menu.style.display === "block" ? "none" : "block";
+  menuToggle.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
 });
